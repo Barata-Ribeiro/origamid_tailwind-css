@@ -7,12 +7,32 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body class="m-8">
-    <ul class="flex gap-2 *:p-2 *:rounded *:text-center flex-wrap">
-      <li class="text-orange-800 bg-orange-200 grow">HTML</li>
-      <li class="text-lime-800 bg-lime-200">CSS</li>
-      <li class="text-yellow-800 bg-yellow-200 w-96">JavaScript</li>
-      <li class="text-blue-800 bg-blue-200">React</li>
-      <li class="text-violet-800 bg-violet-200">PHP</li>
-    </ul>
+    <section class="grid grid-cols-2 gap-4 h-96 bg-[url('./img/grid.svg')]">
+      <div class="p-8 rounded bg-violet-900">
+        <h2 class="mb-4 font-bold text-violet-50">Plano Premium</h2>
+        <ul class="mb-4 list-disc text-violet-50">
+          <li>300 Acessos</li>
+          <li>1200 Requests</li>
+          <li>Suporte Vitalício</li>
+          <li>Acesso Completo</li>
+          <li>Proteção Total</li>
+        </ul>
+        <button class="px-2 py-1 rounded bg-violet-200 text-violet-900">
+          Assinar Premium
+        </button>
+      </div>
+
+      <div class="p-8 bg-gray-200 rounded">
+        <h2 class="mb-4 font-bold">Plano Básico</h2>
+        <ul class="list-disc">
+          <li>150 Acessos</li>
+          <li>500 Requests</li>
+        </ul>
+
+        <button class="px-2 py-1 text-gray-900 bg-gray-300 rounded">
+          Assinar Básico
+        </button>
+      </div>
+    </section>
   </body>
 </html>
