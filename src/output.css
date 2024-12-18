@@ -732,8 +732,36 @@ video {
   flex-wrap: wrap;
 }
 
+.place-items-start {
+  place-items: start;
+}
+
+.place-items-center {
+  place-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-items-start {
+  justify-items: start;
+}
+
+.justify-items-end {
+  justify-items: end;
+}
+
+.justify-items-center {
+  justify-items: center;
 }
 
 .gap-4 {
@@ -772,6 +800,22 @@ video {
 
 .gap-y-12 {
   row-gap: 3rem;
+}
+
+.place-self-center {
+  place-self: center;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.justify-self-start {
+  justify-self: start;
+}
+
+.justify-self-end {
+  justify-self: end;
 }
 
 .rounded {
