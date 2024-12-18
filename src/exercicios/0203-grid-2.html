@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="m-8">
+    <div class="grid gap-y-12">
+      <header class="grid grid-cols-[1fr_auto] items-center">
+        <a href="#" class="text-xl">Nivacraft</a>
+        <nav class="grid grid-cols-2 gap-4">
+          <a href="#" class="hover:underline">Bicicletas</a>
+          <a href="#" class="hover:underline">Contato</a>
+        </nav>
+      </header>
+
+      <main class="grid gap-y-6">
+        <section class="grid grid-cols-3 gap-x-6">
+          <h1>Produtos de Alta Qualidade</h1>
+          <p class="col-span-2">
+            Produtos de alta precisão e qualidade, feitos sob medida apra você.
+            Explore o mundo na sua velocidade com a Nivacraft.
+          </p>
+        </section>
+
+        <article class="grid grid-cols-3 gap-x-6">
+          <figure class="grid gap-y-2">
+            <img src="./img/notebook.jpg" alt="notebook" class="w-full" />
+            <figcaption>Notebook R$2.000</figcaption>
+          </figure>
+
+          <figure class="grid gap-y-2">
+            <img src="./img/camera.jpg" alt="camera" class="w-full" />
+            <figcaption>Camera R$1.500</figcaption>
+          </figure>
+
+          <figure class="grid gap-y-2">
+            <img src="./img/tablet.jpg" alt="tablet" class="w-full" />
+            <figcaption>Tablet R$1.200</figcaption>
+          </figure>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>
