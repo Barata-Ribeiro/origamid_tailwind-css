@@ -570,6 +570,66 @@ video {
   visibility: hidden;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.inset-0 {
+  inset: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.top-8 {
+  top: 2rem;
+}
+
+.top-1\/2 {
+  top: 50%;
+}
+
+.-right-8 {
+  right: -2rem;
+}
+
+.-left-8 {
+  left: -2rem;
+}
+
+.right-8 {
+  right: 2rem;
+}
+
+.left-8 {
+  left: 2rem;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -586,6 +646,11 @@ video {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.my-96 {
+  margin-top: 24rem;
+  margin-bottom: 24rem;
 }
 
 .-mt-1 {
@@ -632,6 +697,10 @@ video {
   display: inline-block;
 }
 
+.flex {
+  display: flex;
+}
+
 .grid {
   display: grid;
 }
@@ -645,12 +714,33 @@ video {
   height: 2rem;
 }
 
+.size-20 {
+  width: 5rem;
+  height: 5rem;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
 .w-1\/3 {
   width: 33.333333%;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .max-w-96 {
@@ -691,6 +781,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .gap-4 {
@@ -762,6 +856,10 @@ video {
   border-width: 2px;
 }
 
+.border-4 {
+  border-width: 4px;
+}
+
 .border-y-2 {
   border-top-width: 2px;
   border-bottom-width: 2px;
@@ -779,6 +877,11 @@ video {
 .border-purple-600 {
   --tw-border-opacity: 1;
   border-color: rgb(147 51 234 / var(--tw-border-opacity, 1));
+}
+
+.border-lime-950 {
+  --tw-border-opacity: 1;
+  border-color: rgb(26 46 5 / var(--tw-border-opacity, 1));
 }
 
 .bg-gray-100 {
@@ -819,6 +922,24 @@ video {
 .bg-purple-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(216 180 254 / var(--tw-bg-opacity, 1));
+}
+
+.bg-lime-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 46 5 / var(--tw-bg-opacity, 1));
+}
+
+.bg-lime-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(190 242 100 / var(--tw-bg-opacity, 1));
+}
+
+.bg-black\/50 {
+  background-color: rgb(0 0 0 / 0.5);
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-4 {

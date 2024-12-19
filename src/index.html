@@ -7,25 +7,26 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body class="m-8">
-    <!-- <a href="#" class="inline-block px-4 py-2 bg-blue-200">Contato</a>
-    <a href="#" class="block px-4 py-2 bg-blue-200">Sobre</a>
-    <p class="px-4 py-2 bg-purple-200">Saiba Mais</p> -->
-    <a href="#principal" class="sr-only focus:not-sr-only"
-      >Pular para o conteúdo</a
-    >
-    <nav class="mb-96">
-      <button id="menuButton" class="px-4 py-2 bg-purple-300">Menu</button>
-      <ul id="menu" class="hidden">
-        <li>Produtos</li>
-        <li>Sobre</li>
-        <li>Contato</li>
+    <nav class="sticky top-0 flex justify-between w-full p-4 bg-gray-200">
+      <a href="/">Floresta</a>
+      <ul class="flex gap-4">
+        <li><a href="/">Produtos</a></li>
+        <li><a href="/">Sobre</a></li>
+        <li><a href="/">Contato</a></li>
       </ul>
     </nav>
-    <p id="principal" class="pt-96">Meu conteudo!</p>
-    <script>
-      menuButton?.addEventListener('click', () => {
-        menu?.classList.toggle('hidden');
-      });
-    </script>
+
+    <div class="z-10 flex gap-4 mt-8">
+      <div class="relative rounded size-20 bg-lime-950">
+        <hr
+          class="absolute w-12 h-3 border-4 rounded-full border-lime-950 bg-lime-300 top-8 -right-8"
+        />
+      </div>
+      <div class="rounded size-20 bg-lime-950"></div>
+    </div>
+
+    <div class="fixed inset-0 z-50 bg-black/50"></div>
+
+    <p class="my-96 h-96">Conteúdo</p>
   </body>
 </html>
