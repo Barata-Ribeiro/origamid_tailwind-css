@@ -7,17 +7,25 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body class="m-8">
-    <button class="px-4 py-2 bg-gray-300 border-2 border-gray-800 rounded">
-      Comprar Produto
-    </button>
-
-    <div class="mt-8 rounded-full size-8 bg-slate-300"></div>
-
-    <p class="max-w-screen-md mt-8 bg-red-200">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, accusamus
-      alias voluptate repudiandae numquam laborum praesentium. Provident neque
-      architecto facilis illo aliquam repudiandae in cum voluptatum sunt,
-      sapiente ipsa beatae!
-    </p>
+    <!-- <a href="#" class="inline-block px-4 py-2 bg-blue-200">Contato</a>
+    <a href="#" class="block px-4 py-2 bg-blue-200">Sobre</a>
+    <p class="px-4 py-2 bg-purple-200">Saiba Mais</p> -->
+    <a href="#principal" class="sr-only focus:not-sr-only"
+      >Pular para o conteúdo</a
+    >
+    <nav class="mb-96">
+      <button id="menuButton" class="px-4 py-2 bg-purple-300">Menu</button>
+      <ul id="menu" class="hidden">
+        <li>Produtos</li>
+        <li>Sobre</li>
+        <li>Contato</li>
+      </ul>
+    </nav>
+    <p id="principal" class="pt-96">Meu conteudo!</p>
+    <script>
+      menuButton?.addEventListener('click', () => {
+        menu?.classList.toggle('hidden');
+      });
+    </script>
   </body>
 </html>
