@@ -6,21 +6,68 @@
     <title>Tailwind CSS</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="grid gap-6 m-8">
-    <nav
-      class="absolute w-40 p-4 text-white rounded-md bg-white/20 backdrop-blur-md top-20 left-20"
+  <body class="m-8">
+    <button
+      class="px-4 py-2 bg-blue-400 border-2 border-blue-200 rounded-md select-none hover:bg-blue-200 active:bg-blue-300 text-blue-950"
     >
-      <a href="">Home</a>
-      <ul>
-        <li>Produtos</li>
-        <li>Sobre</li>
-        <li>Contato</li>
-      </ul>
-    </nav>
-    <img src="./img/floresta.jpg" alt="" />
+      Compras
+    </button>
 
-    <!-- <img src="./img/floresta.jpg" alt="" class="grayscale hover:grayscale-0" />
-    <img src="./img/floresta.jpg" alt="" class="sepia contrast-125" />
-    <img src="./img/floresta.jpg" alt="" class="blur-md hover:blur-0" /> -->
+    <form action="#" class="mt-4">
+      <input
+        type="text"
+        class="p-2 bg-gray-100 border-2 border-gray-200 rounded-md focus:outline-yellow-400"
+      />
+      <button
+        type="submit"
+        class="px-4 py-2 bg-blue-400 border-2 border-blue-200 rounded-md select-none hover:bg-blue-200 active:bg-blue-300 text-blue-950 disabled:opacity-50 disabled:grayscale disabled:pointer-events-none"
+        disabled
+      >
+        Enviar
+      </button>
+    </form>
+
+    <ol class="mt-4 list-decimal">
+      <li class="odd:bg-gray-200 even:bg-gray-300 first:text-green-600">
+        Marta
+      </li>
+      <li class="odd:bg-gray-200 even:bg-gray-300">Nina</li>
+      <li class="odd:bg-gray-200 even:bg-gray-300">Maria</li>
+      <li class="odd:bg-gray-200 even:bg-gray-300">Mara</li>
+      <li class="odd:bg-gray-200 even:bg-gray-300 last:text-red-600">Mila</li>
+    </ol>
+
+    <!-- <ul>
+        {pessoa.map(pessoa => {
+        <li class="odd:bg-gray-200 first:text-red-600 last:text-green-600">
+          {pessoa.nome}
+        </li>
+        })}
+      </ul> -->
+
+    <ol
+      class="list-decimal m-4 *:p-2 odd:*:bg-gray-200 last:*:text-red-600 first:*:text-green-600"
+    >
+      <li>Marta</li>
+      <li>Nina</li>
+      <li>Maria</li>
+      <li>Mara</li>
+      <li>Mila</li>
+      <li>Marta</li>
+      <li>Nina</li>
+      <li>Maria</li>
+      <li>Mara</li>
+      <li>Mila</li>
+      <li>Marta</li>
+      <li>Nina</li>
+      <li>Maria</li>
+      <li>Mara</li>
+      <li>Mila</li>
+      <li>Marta</li>
+      <li>Nina</li>
+      <li>Maria</li>
+      <li>Mara</li>
+      <li>Mila</li>
+    </ol>
   </body>
 </html>
