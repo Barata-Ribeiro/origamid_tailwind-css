@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="m-8">
+    <h1 class="font-bold tracking-wide uppercase text-neutral-950">
+      Escolha a sua
+    </h1>
+    <form action="#" class="grid gap-4 mt-2">
+      <div class="max-w-max">
+        <input
+          type="radio"
+          name="produto"
+          value="n_stark"
+          id="n_stark"
+          class="mr-2 peer"
+        />
+        <label
+          for="n_stark"
+          class="inline-grid grid-cols-[200px_auto] bg-slate-200 peer-checked:bg-slate-400 hover:bg-slate-300 cursor-pointer p-2 rounded-md mb-2"
+        >
+          Nimbus Stark <span>R$ 4999</span>
+        </label>
+        <ul
+          class="hidden w-full p-2 ml-6 rounded-md bg-slate-200 peer-checked:block"
+        >
+          <li>Motor Elétrico</li>
+          <li>Fibra de Carbono</li>
+          <li>50 km/h</li>
+          <li>Rastreador</li>
+        </ul>
+      </div>
+
+      <div class="max-w-max">
+        <input
+          type="radio"
+          name="produto"
+          value="m_might"
+          id="m_might"
+          class="mr-2 peer"
+        />
+        <label
+          for="m_might"
+          class="inline-grid grid-cols-[200px_auto] bg-slate-200 peer-checked:bg-slate-400 hover:bg-slate-300 cursor-pointer p-2 rounded-md mb-2"
+          >Magic Might <span>R$ 2499</span></label
+        >
+        <ul
+          class="hidden w-full p-2 ml-6 rounded-md bg-slate-200 peer-checked:block"
+        >
+          <li>Motor Elétrico</li>
+          <li>Fibra de Carbono</li>
+          <li>45 km/h</li>
+          <li>Rastreador</li>
+        </ul>
+      </div>
+
+      <div class="max-w-max">
+        <input
+          type="radio"
+          name="produto"
+          value="neb_cosmic"
+          id="neb_cosmic"
+          class="mr-2 peer"
+        />
+        <label
+          for="neb_cosmic"
+          class="inline-grid grid-cols-[200px_auto] bg-slate-200 peer-checked:bg-slate-400 hover:bg-slate-300 cursor-pointer p-2 rounded-md mb-2"
+          >Nebula Cosmic <span>R$ 3999</span></label
+        >
+        <ul
+          class="hidden w-full p-2 ml-6 rounded-md bg-slate-200 peer-checked:block"
+        >
+          <li>Motor Elétrico</li>
+          <li>Fibra de Carbono</li>
+          <li>40 km/h</li>
+        </ul>
+      </div>
+    </form>
+  </body>
+</html>
