@@ -6,5 +6,26 @@
     <title>Tailwind CSS</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="m-8"></body>
+  <body class="m-8">
+    <button
+      class="inline-flex items-center gap-2 px-4 py-2 text-green-800 bg-green-200 rounded-md"
+    >
+      COMPRAR
+      <span
+        aria-hidden="true"
+        class="border-4 border-green-600 rounded-full border-r-transparent size-4 animate-spin"
+      ></span>
+    </button>
+    <div class="my-6"></div>
+    <button class="relative px-4 py-2 text-blue-800 bg-blue-200 rounded-md">
+      Mensagens
+      <span
+        class="absolute bg-purple-600 rounded-full -top-0.5 -right-0.5 size-3"
+      >
+        <span
+          class="absolute inset-0 bg-purple-600 rounded-full size-3 animate-ping"
+        ></span>
+      </span>
+    </button>
+  </body>
 </html>
