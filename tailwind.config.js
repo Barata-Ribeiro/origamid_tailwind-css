@@ -2,10 +2,10 @@
 module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
-    colors: ({ colors }) => ({
-      lime: colors.lime,
-      white: 'white',
-    }),
+    // colors: ({ colors }) => ({
+    //   lime: colors.lime,
+    //   white: 'white',
+    // }),
     // colors: {
     //   lime: {
     //     200: '#acef75',
