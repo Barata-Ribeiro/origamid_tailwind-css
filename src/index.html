@@ -6,44 +6,39 @@
     <title>Tailwind CSS</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="m-8 accent-purple-500">
-    <form action="#" class="max-w-sm p-4 mx-auto bg-gray-100 rounded-md">
-      <div class="grid gap-1">
-        <label for="email">Email</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          class="p-2 border-2 border-gray-300 rounded-md focus:outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-100"
-        />
-      </div>
+  <body class="m-8 accent-green-500">
+    <table class="w-full border-collapse table-fixed border-spacing-2">
+      <thead>
+        <tr class="text-left *:p-2 *:border-2 *:border-gray-200">
+          <th>id</th>
+          <th>cliente</th>
+          <th>final cartão</th>
+          <th>data</th>
+        </tr>
+      </thead>
 
-      <div class="mt-2">
-        <label class="flex items-center gap-2" for="termos">
-          <input
-            id="termos"
-            name="termos"
-            type="checkbox"
-            class="size-4 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-100"
-            checked
-          />Li e aceito os termos.</label
-        >
-      </div>
-
-      <select
-        name="cidades"
-        id="cidades"
-        class="p-2 mt-4 border-2 border-gray-300 rounded-md appearance-none focus:outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-100 bg-[url('./img/seta.svg')] bg-no-repeat pr-8 bg-[center_right_0.8rem]"
+      <tbody
+        class="*:*:p-2 *:*:border-b-2 *:*:border-gray-200 odd:*:bg-gray-100"
       >
-        <option value="rio-de-janeiro">Rio de Janeiro</option>
-        <option value="sao-paulo">São Paulo</option>
-        <option value="tocantins">Tocantins</option>
-      </select>
-
-      <input
-        type="file"
-        class="block w-full mt-8 text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-2 file:border-gray-400 file:border-solid file:text-sm file:font-semibold file:bg-gray-300 file:text-gray-700 hover:file:bg-gray-200 focus:outline-none file:focus:border-yellow-400"
-      />
-    </form>
+        <tr>
+          <td>321</td>
+          <td>Maria Santos</td>
+          <td>2233</td>
+          <td>13/12</td>
+        </tr>
+        <tr>
+          <td>322</td>
+          <td>Marta Mendes</td>
+          <td>3322</td>
+          <td>10/12</td>
+        </tr>
+        <tr>
+          <td>323</td>
+          <td>João Moreira</td>
+          <td>2232</td>
+          <td>22/11</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
