@@ -556,11 +556,17 @@ video {
 
 .container {
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: .5rem;
+  padding-left: .5rem;
 }
 
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
 
@@ -573,6 +579,8 @@ video {
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
 
@@ -586,13 +594,6 @@ video {
   .container {
     max-width: 1536px;
   }
-}
-
-.btn-ghost {
-  border-radius: 9999px;
-  padding: .5rem 1rem;
-  opacity: .2;
-  border: 2px solid #ccc;
 }
 
 .col-span-2 {
@@ -660,10 +661,6 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
 }
 
 .block {
@@ -837,6 +834,10 @@ video {
   border-left-width: 4px;
 }
 
+.border-t-2 {
+  border-top-width: 2px;
+}
+
 .border-blue-300 {
   --tw-border-opacity: 1;
   border-color: rgb(147 197 253 / var(--tw-border-opacity, 1));
@@ -855,6 +856,11 @@ video {
 .border-red-300 {
   --tw-border-opacity: 1;
   border-color: rgb(252 165 165 / var(--tw-border-opacity, 1));
+}
+
+.border-stone-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(231 229 228 / var(--tw-border-opacity, 1));
 }
 
 .border-yellow-300 {
@@ -910,6 +916,11 @@ video {
 .bg-slate-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(226 232 240 / var(--tw-bg-opacity, 1));
+}
+
+.bg-stone-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 244 / var(--tw-bg-opacity, 1));
 }
 
 .bg-white {
@@ -976,6 +987,10 @@ video {
 
 .pl-8 {
   padding-left: 2rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .pt-6 {
@@ -1089,6 +1104,11 @@ video {
   color: rgb(185 28 28 / var(--tw-text-opacity, 1));
 }
 
+.text-stone-500 {
+  --tw-text-opacity: 1;
+  color: rgb(120 113 108 / var(--tw-text-opacity, 1));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
@@ -1124,10 +1144,6 @@ video {
 
 .ease-linear {
   transition-timing-function: linear;
-}
-
-.text-shadow-lg {
-  text-shadow: 2px 2px 10px currentColor;
 }
 
 .hover\:rotate-0:hover {
