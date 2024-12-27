@@ -6,11 +6,13 @@
     <title>Forest</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="font-sans bg-verde-800 mb-96">
+  <body class="font-sans bg-verde-800">
+    <!-- Link para pular conteúdo -->
     <a class="sr-only focus:not-sr-only focus:block focus:text-verde-200" href="#conteudo-principal">
       Ir para o conteúdo principal
     </a>
 
+    <!-- Barra superior com dia / temperatura -->
     <div class="container flex justify-center mt-4 md:justify-start">
       <div class="inline-flex items-center rounded-md bg-verde-900">
         <span class="relative block rounded-full size-2 bg-verde-300 -left-1" aria-hidden="true"></span>
@@ -22,6 +24,7 @@
       </div>
     </div>
 
+    <!-- Cabeçalho / Menu -->
     <header class="container flex items-center justify-between gap-8 py-8">
       <a href="./"><img class="italic" src="./img/forest.svg" alt="Logotipo da Forest" /></a>
       <nav aria-label="Menu principal">
@@ -36,17 +39,28 @@
       </nav>
     </header>
 
+    <!-- Conteúdo principal -->
     <main id="conteudo-principal" class="container">
+      <!-- Seção destaque -->
       <div
         class="relative px-4 pt-12 pb-8 overflow-hidden text-white sm:px-8 sm:pt-64 bg-gradient-to-t from-verde-950/80 rounded-2xl"
       >
-        <img class="absolute inset-0 object-cover -z-10 size-full" src="./img/floresta.jpg" alt="Imagem da Floresta" />
+        <img
+          class="absolute inset-0 object-cover -z-10 size-full"
+          src="./img/floresta.jpg"
+          alt="Imagem panorâmica de uma floresta com árvores densas"
+        />
 
         <div
           class="flex flex-col items-start mb-8 sm:items-center sm:py-1 sm:pl-4 sm:pr-1 rounded-xl sm:rounded-full sm:inline-flex bg-verde-950/60 sm:bg-verde-950 gap-x-8 gap-y-2 max-sm:p-4 sm:flex-row backdrop-blur-sm"
         >
           <p>Vagas para Dezembro abertas</p>
-          <a class="inline-block px-4 py-2 rounded-full bg-verde-400 text-verde-900" href="#">Reserve Hoje</a>
+          <a
+            class="inline-block px-4 py-2 rounded-full bg-verde-400 text-verde-900"
+            href="/reservas"
+            aria-label="Ir para a página de reservas de Dezembro"
+            >Reserve Hoje</a
+          >
         </div>
 
         <h1 class="max-w-screen-sm mb-8 font-serif text-4xl sm:mb-20 sm:text-5xl text-balance">
@@ -69,6 +83,67 @@
           </div>
         </div>
       </div>
+
+      <!-- acomodacoes -->
+      <section
+        id="acomodacoes"
+        aria-labelledby="acomodacoes-titulo"
+        class="grid gap-8 pt-16 mb-12 sm:mb-16 lg:grid-cols-[2fr_3fr]"
+      >
+        <div class="bg-[url('./img/padrao.svg')] bg-no-repeat bg-contain bg-left-bottom content-end">
+          <h2 id="acomodacoes-titulo" class="mb-8 font-serif text-4xl text-white lg:text-5xl">Refúgio Natural</h2>
+          <ul
+            class="text-gray-200 *:*:h-0.5 *:*:w-6 *:*:bg-verde-400 *:*:inline-block *:flex *:items-center *:gap-4 space-y-4 sm:text-xl"
+          >
+            <li><span aria-hidden="true"></span>Experimente a natureza de perto</li>
+            <li><span aria-hidden="true"></span>Conecte-se com a natureza</li>
+            <li><span aria-hidden="true"></span>Desconecte-se do digital</li>
+            <li><span aria-hidden="true"></span>Observe a vida selvagem</li>
+            <li><span aria-hidden="true"></span>Escolha a sua cabine preferida</li>
+          </ul>
+        </div>
+
+        <div class="grid grid-cols-[2fr_1fr] gap-4 sm:gap-8">
+          <figure class="grid col-span-full *:col-start-1 *:row-start-1">
+            <img
+              class="object-cover w-full h-52 rounded-xl"
+              src="./img/casa1.jpg"
+              alt="Cabana de madeira, conhecida como Ruby, rodeada por árvores"
+            />
+            <figcaption
+              class="self-start px-4 py-2 m-2 text-white uppercase rounded-full justify-self-end bg-verde-950/60 text-sm/none"
+            >
+              Ruby
+            </figcaption>
+          </figure>
+
+          <figure class="grid *:col-start-1 *:row-start-1">
+            <img
+              class="object-cover rounded-xl size-full"
+              src="./img/casa2.jpg"
+              alt="Chalé verde, chamado Emerald, próximo a um rio"
+            />
+            <figcaption
+              class="self-start px-4 py-2 m-2 text-white uppercase rounded-full justify-self-end bg-verde-950/60 text-sm/none"
+            >
+              Emerald
+            </figcaption>
+          </figure>
+
+          <figure class="grid *:col-start-1 *:row-start-1">
+            <img
+              class="object-cover size-full rounded-xl"
+              src="./img/casa3.jpg"
+              alt="Pequena casa de madeira azul escuro, conhecida como Sapphire, em meio à floresta"
+            />
+            <figcaption
+              class="self-start px-4 py-2 m-2 text-white uppercase rounded-full justify-self-end bg-verde-950/60 text-sm/none"
+            >
+              Sapphire
+            </figcaption>
+          </figure>
+        </div>
+      </section>
     </main>
   </body>
 </html>

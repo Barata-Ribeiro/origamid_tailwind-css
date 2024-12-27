@@ -9,11 +9,8 @@ module.exports = {
         sm: '1rem',
       },
     },
-    colors: {},
     extend: {
       colors: {
-        white: 'white',
-        black: 'black',
         verde: {
           200: '#ACEF75',
           300: '#91EE77',
