@@ -594,6 +594,18 @@ video {
   }
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .relative {
   position: relative;
 }
@@ -975,6 +987,10 @@ video {
   padding-top: 1.5rem;
 }
 
+.pr-4 {
+  padding-right: 1rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1047,6 +1063,10 @@ video {
   text-transform: capitalize;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .tracking-wide {
   letter-spacing: 0.025em;
 }
@@ -1063,6 +1083,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-verde-200 {
+  --tw-text-opacity: 1;
+  color: rgb(172 239 117 / var(--tw-text-opacity, 1));
 }
 
 .shadow-md {
@@ -1144,6 +1169,35 @@ video {
 
 .\*\:\*\:hover\:underline:hover > * > * {
   text-decoration-line: underline;
+}
+
+.focus\:not-sr-only:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+.focus\:mx-auto:focus {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.focus\:block:focus {
+  display: block;
+}
+
+.focus\:pr-4:focus {
+  padding-right: 1rem;
+}
+
+.focus\:text-verde-200:focus {
+  --tw-text-opacity: 1;
+  color: rgb(172 239 117 / var(--tw-text-opacity, 1));
 }
 
 .peer:checked ~ .peer-checked\:block {

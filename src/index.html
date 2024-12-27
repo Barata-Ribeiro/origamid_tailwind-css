@@ -7,24 +7,38 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body class="font-sans bg-verde-800">
+    <a
+      class="sr-only focus:not-sr-only focus:block focus:text-verde-200"
+      href="#main-content"
+    >
+      Ir para o conteúdo principal
+    </a>
+
     <div class="container flex justify-center mt-4 md:justify-start">
       <div class="inline-flex items-center rounded-md bg-verde-900">
         <span
           class="relative block rounded-full size-2 bg-verde-300 -left-1"
+          aria-hidden="true"
         ></span>
         <div
           class="flex divide-x-2 text-verde-300 divide-verde-800 *:px-4 *:py-2"
         >
-          <span class="capitalize" id="dia">segunda</span>
-          <span id="temperatura">25°</span>
-          <span id="tempo">🌞</span>
+          <span class="capitalize" id="dia" aria-label="Dia da semana"
+            >segunda</span
+          >
+          <span id="temperatura" aria-label="Temperatura atual">25°</span>
+          <span id="tempo" aria-label="Condição do tempo"
+            >🌞<span class="sr-only">Ensolarado</span></span
+          >
         </div>
       </div>
     </div>
 
     <header class="container flex items-center justify-between gap-8 py-8">
-      <a href="./"><img src="./img/forest.svg" alt="Forest logo" /></a>
-      <nav>
+      <a href="./"
+        ><img class="italic" src="./img/forest.svg" alt="Logotipo da Forest"
+      /></a>
+      <nav aria-label="Menu principal">
         <ul
           class="flex flex-wrap items-center gap-8 text-xl text-white [&>li>a:hover]:underline [&>li>a:hover]:underline-offset-8"
         >
