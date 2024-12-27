@@ -705,14 +705,14 @@ video {
   aspect-ratio: 1 / 1;
 }
 
-.size-48 {
-  width: 12rem;
-  height: 12rem;
-}
-
 .size-2 {
   width: 0.5rem;
   height: 0.5rem;
+}
+
+.size-48 {
+  width: 12rem;
+  height: 12rem;
 }
 
 .w-1\/3 {
@@ -793,12 +793,20 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
 }
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .gap-2 {
@@ -882,19 +890,24 @@ video {
   border-left-width: 4px;
 }
 
-.bg-verde-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 40 31 / var(--tw-bg-opacity, 1));
-}
-
 .bg-verde-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(145 238 119 / var(--tw-bg-opacity, 1));
 }
 
+.bg-verde-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 40 31 / var(--tw-bg-opacity, 1));
+}
+
 .bg-verde-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(15 28 21 / var(--tw-bg-opacity, 1));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .p-2 {
@@ -935,6 +948,11 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-12 {
@@ -1042,6 +1060,11 @@ video {
   color: rgb(145 238 119 / var(--tw-text-opacity, 1));
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1104,6 +1127,10 @@ video {
   text-decoration-line: underline;
 }
 
+.hover\:underline-offset-8:hover {
+  text-underline-offset: 8px;
+}
+
 .hover\:shadow-lg:hover {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
@@ -1113,6 +1140,10 @@ video {
 .hover\:grayscale-0:hover {
   --tw-grayscale: grayscale(0);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.\*\:\*\:hover\:underline:hover > * > * {
+  text-decoration-line: underline;
 }
 
 .peer:checked ~ .peer-checked\:block {
@@ -1197,4 +1228,12 @@ video {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+}
+
+.\[\&\>li\>a\:hover\]\:underline>li>a:hover {
+  text-decoration-line: underline;
+}
+
+.\[\&\>li\>a\:hover\]\:underline-offset-8>li>a:hover {
+  text-underline-offset: 8px;
 }
