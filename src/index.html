@@ -6,38 +6,24 @@
     <title>Forest</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="font-sans bg-verde-800">
-    <a
-      class="sr-only focus:not-sr-only focus:block focus:text-verde-200"
-      href="#main-content"
-    >
+  <body class="font-sans bg-verde-800 mb-96">
+    <a class="sr-only focus:not-sr-only focus:block focus:text-verde-200" href="#conteudo-principal">
       Ir para o conteúdo principal
     </a>
 
     <div class="container flex justify-center mt-4 md:justify-start">
       <div class="inline-flex items-center rounded-md bg-verde-900">
-        <span
-          class="relative block rounded-full size-2 bg-verde-300 -left-1"
-          aria-hidden="true"
-        ></span>
-        <div
-          class="flex divide-x-2 text-verde-300 divide-verde-800 *:px-4 *:py-2"
-        >
-          <span class="capitalize" id="dia" aria-label="Dia da semana"
-            >segunda</span
-          >
+        <span class="relative block rounded-full size-2 bg-verde-300 -left-1" aria-hidden="true"></span>
+        <div class="flex divide-x-2 text-verde-300 divide-verde-800 *:px-4 *:py-2">
+          <span class="capitalize" id="dia" aria-label="Dia da semana">segunda</span>
           <span id="temperatura" aria-label="Temperatura atual">25°</span>
-          <span id="tempo" aria-label="Condição do tempo"
-            >🌞<span class="sr-only">Ensolarado</span></span
-          >
+          <span id="tempo" aria-label="Condição do tempo">🌞<span class="sr-only">Ensolarado</span></span>
         </div>
       </div>
     </div>
 
     <header class="container flex items-center justify-between gap-8 py-8">
-      <a href="./"
-        ><img class="italic" src="./img/forest.svg" alt="Logotipo da Forest"
-      /></a>
+      <a href="./"><img class="italic" src="./img/forest.svg" alt="Logotipo da Forest" /></a>
       <nav aria-label="Menu principal">
         <ul
           class="flex flex-wrap items-center gap-8 text-xl text-white [&>li>a:hover]:underline [&>li>a:hover]:underline-offset-8"
@@ -49,5 +35,34 @@
         </ul>
       </nav>
     </header>
+
+    <main id="conteudo-principal" class="container">
+      <div class="relative px-8 pt-64 pb-8 overflow-hidden text-white bg-gradient-to-t from-verde-950/80 rounded-2xl">
+        <img class="absolute inset-0 object-cover -z-10 size-full" src="./img/floresta.jpg" alt="Imagem da Floresta" />
+
+        <div class="inline-flex items-center py-1 pl-4 pr-1 mb-8 rounded-full bg-verde-950 gap-x-8">
+          <p>Vagas para Dezembro abertas</p>
+          <a class="inline-block px-4 py-2 rounded-full bg-verde-400 text-verde-900" href="#">Reserve Hoje</a>
+        </div>
+
+        <h1 class="max-w-screen-sm mb-20 font-serif text-5xl text-balance">Venha Experimentar a Vida na Floresta</h1>
+
+        <div class="flex items-end justify-between gap-8 text-sm">
+          <p>
+            Melhores locais para visitar
+            <a class="underline decoration-2 underline-offset-4 hover:no-underline" href="#">2049</a>
+          </p>
+
+          <div>
+            <p class="mb-2 uppercase">Recomendado por</p>
+            <p class="flex items-center gap-x-4">
+              <img class="w-28" src="./img/parceiros/wildbeast.svg" alt="Logo da Wildbeast" />
+              <span aria-hidden="true">|</span>
+              Revista Nacional
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
