@@ -152,11 +152,14 @@
     </section>
 
     <!-- eventos -->
-    <section id="eventos" class="py-12 mb-12 sm:mb-16 sm:py-16 bg-verde-900">
+    <section id="eventos" aria-labelledby="eventos-titulo" class="py-12 mb-12 sm:mb-16 sm:py-16 bg-verde-900">
       <div class="container">
         <p class="mb-4 text-sm tracking-widest text-center uppercase text-verde-200">Conecte-se com a natureza</p>
 
-        <h2 class="max-w-screen-md mx-auto mb-8 font-serif text-4xl text-center text-white sm:text-6xl text-balance">
+        <h2
+          id="eventos-titulo"
+          class="max-w-screen-md mx-auto mb-8 font-serif text-4xl text-center text-white sm:text-6xl text-balance"
+        >
           Cada Som, Cada Momento, Uma Nova Descoberta
         </h2>
 
@@ -176,6 +179,7 @@
               href="/contato"
               id="contato"
               class="self-end inline-block px-4 py-2 rounded-full bg-verde-400 text-verde-900 justify-self-start"
+              aria-label="Reservar Lua Nova em 23 de Março de 2049"
               >Reservar 23/03</a
             >
           </div>
@@ -193,6 +197,7 @@
               href="/contato"
               id="contato"
               class="self-end inline-block px-4 py-2 rounded-full bg-verde-400 text-verde-900 justify-self-start"
+              aria-label="Reservar Aurora Boreal em 15 de Abril de 2049"
               >Reservar 15/04</a
             >
           </div>
@@ -211,10 +216,86 @@
               href="/contato"
               id="contato"
               class="self-end inline-block px-4 py-2 rounded-full bg-verde-400 text-verde-900 justify-self-start"
+              aria-label="Reservar Chuva de Meteoros em 18 de Agosto de 2049"
               >Reservar 18/08</a
             >
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- experiencias -->
+    <section id="experiencias" class="container grid gap-8 mb-12 sm:mb-16 sm:grid-cols-2">
+      <div class="p-6 bg-verde-900 sm:p-8 rounded-xl">
+        <p class="mb-4 text-sm tracking-widest uppercase text-verde-200">Experiências Exclusivas</p>
+
+        <h2 class="mb-8 font-serif text-3xl text-white capitalize sm:text-4xl text-balance lg:text-5xl">
+          Escolha Sua Próxima Aventura
+        </h2>
+
+        <h3
+          class="text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:bg-verde-400 hover:before:w-10 before:transition-[width]"
+        >
+          Observação Noturna
+        </h3>
+        <p class="pl-10 mb-8 text-gray-400 text-balance">
+          Explore a vida selvagem em seu habitat natural sob as estrelas.
+        </p>
+
+        <h3
+          class="text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:bg-verde-400 hover:before:w-10 before:transition-[width]"
+        >
+          Vida Selvagem
+        </h3>
+        <p class="pl-10 mb-8 text-gray-400 text-balance">Observe a vida selvagem em seu habitat natural.</p>
+
+        <h3
+          class="text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:bg-verde-400 hover:before:w-10 before:transition-[width]"
+        >
+          Canoagem
+        </h3>
+        <p class="pl-10 mb-8 text-gray-400 text-balance">Conquiste novos horizontes com nossa equipe especializada.</p>
+      </div>
+
+      <div class="grid grid-cols-2 grid-rows-2 gap-4">
+        <figure class="relative overflow-hidden cursor-pointer group rounded-xl">
+          <img
+            src="./img/canoagem.jpg"
+            alt="Turistas em um caiaque, praticando canoagem no rio"
+            class="object-cover transition-transform size-full group-hover:scale-110"
+          />
+          <figcaption
+            class="absolute inset-0 flex items-end p-4 text-white transition-opacity opacity-0 bg-gradient-to-t from-verde-950/80 group-hover:opacity-100"
+          >
+            Canoagem
+          </figcaption>
+        </figure>
+
+        <figure class="relative row-span-2 overflow-hidden cursor-pointer group rounded-xl">
+          <img
+            src="./img/observacao-noturna.jpg"
+            alt="Imagem noturna de uma aurora boreal e um céu estrelado"
+            class="object-cover transition-transform size-full group-hover:scale-110"
+          />
+          <figcaption
+            class="absolute inset-0 flex items-end p-4 text-white transition-opacity opacity-0 bg-gradient-to-t from-verde-950/80 group-hover:opacity-100"
+          >
+            Observação Noturna
+          </figcaption>
+        </figure>
+
+        <figure class="relative overflow-hidden cursor-pointer group rounded-xl">
+          <img
+            src="./img/vida-selvagem.jpg"
+            alt="Imagem de alguns cervos em seu habitat natural"
+            class="object-cover transition-transform size-full group-hover:scale-110"
+          />
+          <figcaption
+            class="absolute inset-0 flex items-end p-4 text-white transition-opacity opacity-0 bg-gradient-to-t from-verde-950/80 group-hover:opacity-100"
+          >
+            Vida Selvagem
+          </figcaption>
+        </figure>
       </div>
     </section>
   </body>
