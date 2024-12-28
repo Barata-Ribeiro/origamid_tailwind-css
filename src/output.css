@@ -1007,9 +1007,20 @@ a {
   border-left-width: calc(2px * calc(1 - var(--tw-divide-x-reverse)));
 }
 
+.divide-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
+}
+
 .divide-verde-800 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgb(22 40 31 / var(--tw-divide-opacity, 1));
+}
+
+.divide-verde-900 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(15 28 21 / var(--tw-divide-opacity, 1));
 }
 
 .place-self-start {
@@ -1603,6 +1614,10 @@ a {
   height: 0.125rem;
 }
 
+.\*\:\*\:max-h-8 > * > * {
+  max-height: 2rem;
+}
+
 .\*\:\*\:w-6 > * > * {
   width: 1.5rem;
 }
@@ -1648,6 +1663,10 @@ a {
 
 .\*\:p-2 > * {
   padding: 0.5rem;
+}
+
+.\*\:p-4 > * {
+  padding: 1rem;
 }
 
 .\*\:px-4 > * {
@@ -1816,6 +1835,17 @@ a {
     margin-bottom: 1rem;
   }
 
+  .max-sm\:divide-y-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-y-reverse: 0;
+    border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
+    border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
+  }
+
+  .max-sm\:divide-verde-900 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgb(15 28 21 / var(--tw-divide-opacity, 1));
+  }
+
   .max-sm\:p-4 {
     padding: 1rem;
   }
@@ -1858,6 +1888,24 @@ a {
     border-radius: 9999px;
   }
 
+  .sm\:border-y-2 {
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+  }
+
+  .sm\:border-b-2 {
+    border-bottom-width: 2px;
+  }
+
+  .sm\:border-t {
+    border-top-width: 1px;
+  }
+
+  .sm\:border-verde-900 {
+    --tw-border-opacity: 1;
+    border-color: rgb(15 28 21 / var(--tw-border-opacity, 1));
+  }
+
   .sm\:bg-verde-950 {
     --tw-bg-opacity: 1;
     background-color: rgb(3 5 4 / var(--tw-bg-opacity, 1));
@@ -1880,6 +1928,11 @@ a {
   .sm\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  .sm\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .sm\:pl-4 {
