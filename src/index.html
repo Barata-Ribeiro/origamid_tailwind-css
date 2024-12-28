@@ -299,7 +299,7 @@
       </div>
     </section>
 
-    <!-- atividades -->
+    <!-- atividades - ciclo natural -->
     <section
       class="container bg-[url('./img/padrao.svg')] bg-no-repeat bg-contain bg-center mb-12 sm:mb-16 sm:py-16"
       aria-labelledby="atividades-titulo"
@@ -354,6 +354,99 @@
           <span class="text-verde-300" aria-label="Horário das atividades da noite">19:00 - 21:00</span>
         </div>
       </div>
+    </section>
+
+    <!-- contato -->
+    <section id="contato" class="container grid gap-8 mb-12 sm:mb-16 lg:grid-cols-2">
+      <div>
+        <h2 class="mb-4 font-serif text-4xl text-verde-300">Nossos Contatos</h2>
+        <p class="mb-8 text-gray-200 text-balance">
+          Tem interesse em passar uma temporada na Forest? Entre em contato com a gente por telefone ou email.
+        </p>
+
+        <ul class="space-y-8">
+          <li class="grid gap-2">
+            <span aria-hidden="true" class="h-0.5 w-6 bg-verde-400 inline-block"></span>
+            <h3 class="font-serif text-2xl text-verde-300">Base</h3>
+            <p class="text-gray-300">Rua da Mata, 123 - Floresta Nacional - RJ</p>
+          </li>
+
+          <li class="grid gap-2">
+            <span aria-hidden="true" class="h-0.5 w-6 bg-verde-400 inline-block"></span>
+            <h3 class="font-serif text-2xl text-verde-300">Email</h3>
+            <p class="text-gray-300">contato@forest.com</p>
+          </li>
+
+          <li class="grid gap-2">
+            <span aria-hidden="true" class="h-0.5 w-6 bg-verde-400 inline-block"></span>
+            <h3 class="font-serif text-2xl text-verde-300">Telefone</h3>
+            <p class="text-gray-300">+55 (21) 99999-9999</p>
+          </li>
+        </ul>
+      </div>
+
+      <form action="#" class="grid gap-4 p-4 shadow-2xl rounded-xl bg-verde-900 lg:p-8">
+        <fieldset class="grid gap-4" aria-labelledby="formulario-contato">
+          <legend id="formulario-contato" class="sr-only">Formulário de Contato</legend>
+
+          <div class="grid gap-1">
+            <label class="text-white" for="nome">Nome</label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              required
+              class="p-2 text-white border-2 rounded-md outline-none border-verde-800 bg-verde-800 placeholder:text-verde-900 focus:border-verde-900 focus:ring-2 focus:ring-verde-400"
+            />
+          </div>
+
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div class="grid gap-1">
+              <label class="text-white" for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="contato@example.com"
+                class="p-2 text-white border-2 rounded-md outline-none border-verde-800 bg-verde-800 placeholder:text-verde-900 focus:border-verde-900 focus:ring-2 focus:ring-verde-400"
+              />
+            </div>
+
+            <div class="grid gap-1">
+              <label class="text-white" for="telefone">Telefone</label>
+              <input
+                type="text"
+                name="telefone"
+                id="telefone"
+                required
+                placeholder="(99) 12345-6789"
+                class="p-2 text-white border-2 rounded-md outline-none border-verde-800 bg-verde-800 placeholder:text-verde-900 focus:border-verde-900 focus:ring-2 focus:ring-verde-400"
+              />
+            </div>
+          </div>
+
+          <div class="grid gap-1">
+            <label class="text-white" for="mensagem">Mensagem</label>
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              placeholder="Digite sua mensagem..."
+              rows="5"
+              required
+              class="p-2 text-white border-2 rounded-md outline-none resize-none border-verde-800 bg-verde-800 placeholder:text-verde-900 focus:border-verde-900 focus:ring-2 focus:ring-verde-400"
+            ></textarea>
+          </div>
+        </fieldset>
+
+        <button
+          type="submit"
+          class="inline-block px-4 py-2 rounded-full bg-verde-400 text-verde-900 place-self-start"
+          aria-label="Enviar formulário de contato por email"
+        >
+          Enviar Email
+        </button>
+      </form>
     </section>
   </body>
 </html>
