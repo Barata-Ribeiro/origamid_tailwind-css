@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forest</title>
-    <link rel="icon" href="./favicon.ico" />
+    <link rel="icon" href="../favicon.png" />
     <meta
       name="description"
       content="Descubra a magia da floresta: cabanas aconchegantes, paisagens incríveis e momentos inesquecíveis esperam por você."
@@ -24,7 +24,9 @@
         <div class="flex divide-x-2 text-verde-300 divide-verde-800 *:px-4 *:py-2">
           <span class="capitalize" id="dia" aria-label="Dia da semana">segunda</span>
           <span id="temperatura" aria-label="Temperatura atual">25°</span>
-          <span id="tempo" aria-label="Condição do tempo">🌞<span class="sr-only">Ensolarado</span></span>
+          <span id="tempo" aria-label="Condição do tempo" class="select-none"
+            >🌞<span class="sr-only">Ensolarado</span></span
+          >
         </div>
       </div>
     </div>
@@ -81,11 +83,17 @@
       <div
         class="relative px-4 pt-12 pb-8 overflow-hidden text-white sm:px-8 sm:pt-64 bg-gradient-to-t from-verde-950/80 rounded-2xl"
       >
-        <img
-          class="absolute inset-0 object-cover -z-10 size-full"
-          src="./img/floresta.jpg"
-          alt="Imagem panorâmica de uma floresta com árvores densas"
-        />
+        <video
+          id="video"
+          muted
+          autoplay
+          playsinline
+          loop
+          width="1280"
+          height="720"
+          class="absolute inset-0 object-cover -z-10 size-full animate-fade-in"
+          src="./img/video_chuva.mp4"
+        ></video>
 
         <div
           class="flex flex-col items-start mb-8 sm:items-center sm:py-1 sm:pl-4 sm:pr-1 rounded-xl sm:rounded-full sm:inline-flex bg-verde-950/60 sm:bg-verde-950 gap-x-8 gap-y-2 max-sm:p-4 sm:flex-row backdrop-blur-sm"
@@ -542,6 +550,7 @@
     </footer>
 
     <script>
+      // Menu Mobile
       const mobileButton = document.getElementById('mobile-button');
       const mobileMenu = document.getElementById('mobile-menu');
 
@@ -560,6 +569,25 @@
         mobileMenu.classList.add('hidden');
         mobileMenu.classList.remove('flex');
       });
+
+      //  Video
+      const video = document.getElementById('video');
+      const temperatura = document.getElementById('temperatura');
+      const tempo = document.getElementById('tempo');
+      const dia = document.getElementById('dia');
+
+      const random = Math.floor(Math.random() * 10) + 20;
+      temperatura.textContent = `${random}°`;
+      tempo.textContent = random < 25 ? `🌧️ ${random + 5}%` : '🌞';
+      tempo.setAttribute(
+        'aria-label',
+        random < 25 ? `Chuvoso, ${random + 5} por cento de chance de chover` : 'Ensolarado',
+      );
+
+      const date = new Date();
+      dia.textContent = new Intl.DateTimeFormat('pt-BR', { weekday: 'long' }).format(date);
+
+      video.src = `./img/video_${random < 25 ? 'chuva' : 'sol'}.mp4`;
     </script>
   </body>
 </html>
