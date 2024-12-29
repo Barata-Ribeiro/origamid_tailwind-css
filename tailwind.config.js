@@ -11,6 +11,10 @@ module.exports = {
         sm: '1rem',
       },
     },
+    fontFamily: {
+      sans: ['DM Sans', 'system-ui', 'sans-serif'],
+      serif: ['DM Serif Sans', 'Georgia', 'serif'],
+    },
     extend: {
       colors: {
         verde: {
