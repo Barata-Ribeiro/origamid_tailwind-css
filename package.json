@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build": "rm -rf dist && mkdir dist && cp src/index.html dist/index.html && cp -R src/img dist/img && cp -R src/js dist/js && npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.49",
