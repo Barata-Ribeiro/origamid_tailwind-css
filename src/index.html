@@ -31,21 +31,31 @@
 
     <!-- Cabeçalho / Menu -->
     <header class="container flex items-center justify-between gap-8 py-8">
-      <a href="./"><img class="italic" src="./img/forest.svg" alt="Logotipo da Forest" /></a>
+      <a href="./" aria-label="Página inicial da Forest">
+        <img class="italic" src="./img/forest.svg" alt="Logotipo da Forest" />
+      </a>
 
       <nav
         aria-label="Menu principal"
         id="mobile-menu"
         class="z-40 items-center hidden lg:block max-lg:fixed max-lg:w-full max-lg:inset-0"
       >
-        <div class="fixed inset-0 overflow-hidden bg-verde-950/40 backdrop-blur-md"></div>
+        <div class="fixed inset-0 overflow-hidden lg:hidden bg-verde-950/40 backdrop-blur-md"></div>
         <ul
           class="lg:flex max-lg:divide-y-2 max-lg:divide-white/10 max-lg:z-50 max-lg:absolute max-lg:p-8 max-lg:w-full text-2xl lg:flex-wrap items-center lg:gap-8 lg:text-xl text-white [&>li>a:lg:hover]:underline [&>li>a:lg:hover]:underline-offset-8"
         >
-          <li><a class="block p-4 lg:px-0 lg:py-2 max-lg:hover:bg-white/10" href="#acomodacoes">Acomodações</a></li>
-          <li><a class="block p-4 lg:px-0 lg:py-2 max-lg:hover:bg-white/10" href="#eventos">Eventos</a></li>
-          <li><a class="block p-4 lg:px-0 lg:py-2 max-lg:hover:bg-white/10" href="#experiencias">Experiencias</a></li>
-          <li><a class="block p-4 lg:px-0 lg:py-2 max-lg:hover:bg-white/10" href="#contato">Contato</a></li>
+          <li class="opacity-0 animate-1 animate-slide-in">
+            <a class="block p-4 lg:px-0 lg:py-2 max-lg:hover:bg-white/10" href="#acomodacoes">Acomodações</a>
+          </li>
+          <li class="opacity-0 animate-2 animate-slide-in">
+            <a class="block p-4 lg:px-0 lg:py-2 max-lg:hover:bg-white/10" href="#eventos">Eventos</a>
+          </li>
+          <li class="opacity-0 animate-3 animate-slide-in">
+            <a class="block p-4 lg:px-0 lg:py-2 max-lg:hover:bg-white/10" href="#experiencias">Experiencias</a>
+          </li>
+          <li class="opacity-0 animate-4 animate-slide-in">
+            <a class="block p-4 lg:px-0 lg:py-2 max-lg:hover:bg-white/10" href="#contato">Contato</a>
+          </li>
         </ul>
       </nav>
 

@@ -1,3 +1,5 @@
+import plugin from 'tailwindcss/plugin';
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{html,js}'],
@@ -21,7 +23,35 @@ module.exports = {
           950: '#030504',
         },
       },
+      keyframes: {
+        slideIn: {
+          '0%': { opacity: 0, transform: 'translateX(-20%)' },
+          '100%': { opacity: 1, transform: 'translateX(0)' },
+        },
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+      },
+      animation: {
+        ['slide-in']: 'slideIn 0.4s ease-in-out forwards',
+        ['fade-in']: 'fadeIn 0.4s ease-in-out forwards',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(({ addUtilities }) => {
+      function generateAnimationDelay() {
+        const delays = {};
+        for (let i = 0; i <= 12; i++) {
+          delays[`.animate-${i}`] = {
+            'animation-delay': `${i * 100}ms`,
+          };
+        }
+        return delays;
+      }
+
+      addUtilities(generateAnimationDelay());
+    }),
+  ],
 };
