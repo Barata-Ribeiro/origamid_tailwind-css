@@ -327,7 +327,7 @@
         </div>
 
         <div
-          class="grid flex-1 gap-4 p-6 transition-transform translate-y-12 bg-verde-900 sm:p-8 rounded-xl sm:hover:translate-y-10"
+          class="grid flex-1 gap-4 p-6 transition-transform sm:translate-y-12 bg-verde-900 sm:p-8 rounded-xl sm:hover:translate-y-10"
         >
           <span class="flex items-center justify-center rounded-full bg-verde-400 size-10" aria-hidden="true">
             <img src="./img/dia.svg" alt="" />
@@ -472,5 +472,42 @@
         </li>
       </ul>
     </section>
+
+    <!-- rodapé -->
+    <footer class="container" role="contentinfo">
+      <div class="grid gap-8 p-6 bg-verde-900 sm:p-12 rounded-2xl lg:grid-cols-2">
+        <div class="flex gap-12 max-sm:flex-col max-sm:gap-4">
+          <div>
+            <h3 class="mb-4 font-serif text-xl text-white">Endereço</h3>
+            <address class="not-italic text-gray-400">
+              Rua da Mata, 123<br />
+              Floresta Nacional<br />
+              Rio de Janeiro, RJ
+            </address>
+          </div>
+          <div>
+            <h3 class="mb-4 font-serif text-xl text-white">Contato</h3>
+            <address class="not-italic text-gray-400">
+              <a href="mailto:contato@forest.com" class="hover:text-verde-300">contato@forest.com</a><br />
+              <a href="tel:+5521999999999" class="hover:text-verde-300">+55 21 9999-9999</a>
+            </address>
+          </div>
+        </div>
+        <div class="lg:justify-self-end">
+          <img class="mb-4 italic" src="./img/forest.svg" alt="Logo da Forest" />
+          <p class="text-gray-400">Conecte-se com a natureza</p>
+        </div>
+      </div>
+      <div class="flex items-center justify-between gap-8 py-8 text-sm text-gray-400 max-sm:flex-col-reverse">
+        <p>&copy; 2024 Forest. Todos os direitos reservados.</p>
+        <nav aria-label="Redes sociais">
+          <ul class="flex gap-8">
+            <li><a class="hover:text-verde-300" href="#" aria-label="Instagram da Forest">Instagram</a></li>
+            <li><a class="hover:text-verde-300" href="#" aria-label="LinkedIn da Forest">LinkedIn</a></li>
+            <li><a class="hover:text-verde-300" href="#" aria-label="Facebook da Forest">Facebook</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
