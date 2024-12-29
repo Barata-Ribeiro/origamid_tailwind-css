@@ -32,16 +32,37 @@
     <!-- Cabeçalho / Menu -->
     <header class="container flex items-center justify-between gap-8 py-8">
       <a href="./"><img class="italic" src="./img/forest.svg" alt="Logotipo da Forest" /></a>
-      <nav aria-label="Menu principal">
+
+      <nav
+        aria-label="Menu principal"
+        id="mobile-menu"
+        class="z-40 items-center hidden lg:block max-lg:fixed max-lg:w-full max-lg:inset-0"
+      >
+        <div class="fixed inset-0 overflow-hidden bg-verde-950/40 backdrop-blur-md"></div>
         <ul
-          class="flex flex-wrap items-center gap-8 text-xl text-white [&>li>a:hover]:underline [&>li>a:hover]:underline-offset-8"
+          class="lg:flex max-lg:divide-y-2 max-lg:divide-white/10 max-lg:z-50 max-lg:absolute max-lg:p-8 max-lg:w-full text-2xl lg:flex-wrap items-center lg:gap-8 lg:text-xl text-white [&>li>a:lg:hover]:underline [&>li>a:lg:hover]:underline-offset-8"
         >
-          <li><a href="#acomodacoes">Acomodações</a></li>
-          <li><a href="#eventos">Eventos</a></li>
-          <li><a href="#experiencias">Experiencias</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a class="block p-4 lg:px-0 lg:py-2 max-lg:hover:bg-white/10" href="#acomodacoes">Acomodações</a></li>
+          <li><a class="block p-4 lg:px-0 lg:py-2 max-lg:hover:bg-white/10" href="#eventos">Eventos</a></li>
+          <li><a class="block p-4 lg:px-0 lg:py-2 max-lg:hover:bg-white/10" href="#experiencias">Experiencias</a></li>
+          <li><a class="block p-4 lg:px-0 lg:py-2 max-lg:hover:bg-white/10" href="#contato">Contato</a></li>
         </ul>
       </nav>
+
+      <button
+        id="mobile-button"
+        class="inline-flex items-center px-4 py-2 rounded-full gap-x-3 bg-verde-400 text-verde-900 lg:hidden"
+        aria-label="Abrir menu de navegação"
+        aria-controls="menu-principal"
+        aria-expanded="false"
+      >
+        Menu
+        <span class="flex w-4 h-3 *:h-0.5 *:rounded-md *:bg-verde-800 flex-col justify-between">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </span>
+      </button>
     </header>
 
     <!-- Conteúdo principal -->
@@ -509,5 +530,26 @@
         </nav>
       </div>
     </footer>
+
+    <script>
+      const mobileButton = document.getElementById('mobile-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      mobileButton.addEventListener('click', () => {
+        const expanded = mobileButton.getAttribute('aria-expanded') === 'true' || false;
+        mobileButton.setAttribute('aria-expanded', !expanded);
+
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('flex');
+      });
+
+      mobileMenu.addEventListener('click', () => {
+        const expanded = mobileButton.getAttribute('aria-expanded') === 'true' || false;
+        mobileButton.setAttribute('aria-expanded', !expanded);
+
+        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('flex');
+      });
+    </script>
   </body>
 </html>
