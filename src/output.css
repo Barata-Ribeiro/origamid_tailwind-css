@@ -107,7 +107,7 @@
 }
 
 /*
-! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -2274,12 +2274,12 @@ a {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-}
 
-.\[\&\>li\>a\:lg\:hover\]\:underline>li>a:lg:hover {
-  text-decoration-line: underline;
-}
+  .lg\:hover\:\[\&\>li\>a\]\:underline>li>a:hover {
+    text-decoration-line: underline;
+  }
 
-.\[\&\>li\>a\:lg\:hover\]\:underline-offset-8>li>a:lg:hover {
-  text-underline-offset: 8px;
+  .lg\:hover\:\[\&\>li\>a\]\:underline-offset-8>li>a:hover {
+    text-underline-offset: 8px;
+  }
 }
